@@ -9,4 +9,4 @@ docker build -t delivery-app:latest .
 
 # Run docker container
 echo "Running docker container delivery-app..."
-docker run -d -it --rm -p 3000:3000 delivery-app --network papi
+docker run -d -it --network papi --rm -p 3000:3000 delivery-app
